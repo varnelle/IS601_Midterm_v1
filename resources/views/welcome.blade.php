@@ -13,8 +13,8 @@
     <!-- Styles -->
     <style>
         html, body {
-            background-color: #fff;
-            color: #636b6f;
+            background-color: #6f42c1;
+            color: #c69500;
             font-family: 'Raleway', sans-serif;
             font-weight: 100;
             height: 100vh;
@@ -50,7 +50,7 @@
         }
 
         .links > a {
-            color: #636b6f;
+            color: #c69500;
             padding: 0 25px;
             font-size: 12px;
             font-weight: 600;
@@ -71,8 +71,13 @@
             @auth
                 <a href="{{ url('/home') }}">Home</a>
             @else
+
                 <a href="{{ route('login') }}">Login</a>
                 <a href="{{ route('register') }}">Register</a>
+                <li><a href="{{route('about')}}">About</a></li>
+                <li><a href="{{route('contact')}}">Contact</a></li>
+
+
             @endauth
         </div>
     @endif
