@@ -40,8 +40,8 @@ class TestUsers extends TestCase
         $this->assertTrue($users->delete());
     }
     public function testCollectionCount() {
-        $questions = Question::All();
-        $recordCount = $questions->count();
+        $users = User::All();
+        $recordCount = $users->count();
         $this->assertInternalType(IsType::TYPE_INT, $recordCount);
     }
 
