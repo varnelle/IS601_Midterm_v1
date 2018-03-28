@@ -22,6 +22,22 @@ class TestUsers extends TestCase
         $users->email = 'my email';
         $users->password = 'secret';
         $this->assertTrue($users->save());
+
+
+
+        }
+
+
+
+        public function testUpdate()
+    {
+        $users = new User();
+        $users->name = 'Steve Smith';
+        $users->email = 'my email';
+        $users->password = 'secret';
+        $this->assertTrue($users->update());
+
+
     }
 
 }
