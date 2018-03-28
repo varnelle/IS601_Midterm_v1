@@ -46,4 +46,12 @@ class CarTest extends TestCase
 
 
     }
+
+    public function testCollectionCount()
+    {
+        $car = Car::All();
+        $recordCount = $car->count();
+        $this->assertInternalType(IsType::TYPE_INT, $recordCount);
+
+    }
 }
