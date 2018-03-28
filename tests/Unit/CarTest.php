@@ -15,18 +15,23 @@ class CarTest extends TestCase
      */
 
         public function testExample()
+        {
+            $car = new Car();
+            $car->make = 'mam llc';
+            $car->model = 'honda';
+            $car->year = '1964';
+            $this->assertTrue($car->save());
+        }
+
+        public function testUpdate()
     {
         $car = new Car();
         $car->make = 'mam llc';
         $car->model = 'honda';
-        $car->year = '1964';
+        $car->year = '2000';
         $this->assertTrue($car->save());
 
+
     }
-
-
-
-
-
 
 }
