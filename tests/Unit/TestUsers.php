@@ -14,30 +14,4 @@ class TestUsers extends TestCase
      * @return void
      */
 
-
-    public function testExample()
-    {
-        $users = new User();
-        $users->name = 'my name';
-        $users->email = 'my email';
-        $users->password = 'secret';
-        $this->assertTrue($users->save());
-
-
-
-        }
-
-
-
-        public function testUpdate()
-    {
-        $users = new User();
-        $users->name = 'Steve Smith';
-        $users->email = 'my email';
-        $users->password = 'secret';
-        $this->assertTrue($users->update());
-
-
-    }
-
 }
