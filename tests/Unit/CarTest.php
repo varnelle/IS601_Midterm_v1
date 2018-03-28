@@ -1,10 +1,10 @@
 <?php
 
-namespace Tests\Unit;
-
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use PHPUnit\Framework\Constraint\IsType;
+use App\car;
 
 class CarTest extends TestCase
 {
@@ -13,8 +13,20 @@ class CarTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+
+        public function testExample()
     {
-        $this->assertTrue(true);
+        $car = new Car();
+        $car->make = 'mam llc';
+        $car->model = 'honda';
+        $car->year = '1964';
+        $this->assertTrue($car->save());
+
     }
+
+
+
+
+
+
 }
