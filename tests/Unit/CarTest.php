@@ -54,4 +54,18 @@ class CarTest extends TestCase
         $this->assertInternalType(IsType::TYPE_INT, $recordCount);
 
     }
+
+    public function testDataType()
+        // Declaring variables
+
+
+    {
+        //Declaring Variable
+        $year = 2000;
+        $this->assertTrue(is_int($year));
+
+    }
+
+
+
 }
