@@ -56,8 +56,6 @@ class CarTest extends TestCase
     }
 
     public function testDataType()
-        // Declaring variables
-
 
     {
         //Declaring Variable
@@ -66,6 +64,31 @@ class CarTest extends TestCase
 
     }
 
+    public function testDataType2()
+
+    {
+        //Declaring Variable
+        $model = 'my model';
+        $this->assertTrue(is_string($model));
+
+    }
+
+    public function testCar1()
+    {
 
 
+        $make = 'honda';
+        $this->assertTrue(is_string($make));
+        $make = 'toyota';
+        $this->assertTrue(is_string($make));
+        $make = 'ford';
+        $this->assertTrue(is_string($make));
+    }
+    public function testCar2()
+    {
+
+
+        $make = 'ford';
+        $this->assertTrue(is_string($make));
+    }
 }
