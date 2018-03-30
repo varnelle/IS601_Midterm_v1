@@ -84,11 +84,6 @@ class CarTest extends TestCase
         $make = 'ford';
         $this->assertTrue(is_string($make));
     }
-    public function testCar2()
-    {
 
-
-        $make = 'ford';
-        $this->assertTrue(is_string($make));
-    }
 }
+
